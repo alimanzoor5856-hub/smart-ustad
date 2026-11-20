@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Ustad - Tutors</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<div class="logo">🎓 Smart Ustad</div>
+<nav><a href="index.html">Home</a><a href="subjects.html">Subjects</a><a href="tutors.html">Tutors</a><a href="islamic.html">Islamic</a><a href="register.html#classes">Classes</a><a href="register.html#classes">Register</a><a href="contact.html">Contact</a></nav>
+</header>
+<main>
+<section id="search">
+<h2 class="heading">Find Your Perfect Tutor</h2>
+<p class="subtitle">
+    Search by subject, class and tuition type.
+  </p>
+<div class="search-box">
+<input id="keyword" placeholder="Search Subject or Teacher" type="text"/>
+<select id="level">
+<option value="">All Classes</option>
+<option value="1">Class 1</option>
+<option value="2">Class 2</option>
+<option value="3">Class 3</option>
+<option value="4">Class 4</option>
+<option value="5">Class 5</option>
+<option value="6">Class 6</option>
+<option value="7">Class 7</option>
+<option value="8">Class 8</option>
+<option value="9">Class 9</option>
+<option value="10">Class 10</option>
+</select>
+<select id="mode">
+<option value="">All Types</option>
+<option value="online">Online</option>
+<option value="home">Home Tuition</option>
+</select>
+<button class="btn btn-green" onclick="searchTutors()">Search</button>
+</div>
+</section><section id="tutors">
+<h2 class="heading">Our Tutors</h2>
+<p class="subtitle">
+    Explore sample teacher profiles.
+  </p>
+  <div class="cards" id="tutorList">
+	  
+	  <div class="tutor"
+      data-name="Muhammad Ali"
+      data-subject="islamic "
+      data-level="8"
+      data-mode="Home/online">
+
+      <img src="images/muhammad ali.jpg" alt="Teacher profile">
+      <h3>Muhammad Ali</h3>
+      <p>Nazra Quran/Islamiyat/Arabic</p>
+      <p>Class 1_10  Home/Online</p>
+      <p>Experience: 4 Years</p>
+      <button class="btn btn-green"
+        onclick="contactTutor('Muhammad Ali')">Contact Tutor</button>
+    </div> 
+	  
+<div class="tutor" data-level="8" data-mode="online" data-name="fatima ali" data-subject="english">
+<img alt="Teacher profile" src="images/images (1).jpg"/>
+<h3>Fatima Ali</h3>
+<p>English</p>
+<p>Class 8 | Online</p>
+<p>Experience: 4 Years</p>
+<button class="btn btn-green" onclick="contactTutor('Fatima Ali')">Contact Tutor</button>
+</div>
+<div class="tutor" data-level="10" data-mode="home" data-name="usman ahmed" data-subject="physics">
+<img alt="Teacher profile" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500"/>
+<h3>Usman Ahmed</h3>
+<p>Physics</p>
+<p>Class 10 | Home</p>
+<p>Experience: 5 Years</p>
+<button class="btn btn-green" onclick="contactTutor('Usman Ahmed')">Contact Tutor</button>
+</div>
+<div class="tutor" data-level="1" data-mode="online" data-name="mariam noor" data-subject="quran">
+<img alt="Teacher profile" src="images/images.jpg"/>
+<h3>Mariam Noor</h3>
+<p>Nazra Quran</p>
+<p>Class 1 | Online</p>
+<p>Experience: 5 Years</p>
+<button class="btn btn-green" onclick="contactTutor('Mariam Noor')">Contact Tutor</button>
+</div>
+</div>
+<p id="noResults">No matching tutors found.</p>
+</section>
+</main>
+<footer>
+<div class="footer-inner">
+<h2 class="footer-brand">🎓 Smart Ustad</h2>
+<p class="footer-tagline">Learn Today, Lead Tomorrow!<br/>Online Tuition | Home Tuition | Islamic Education</p>
+<h3 class="footer-contact-title">Get in Touch</h3>
+<p>Have a question? Contact us — we will be happy to help.</p>
+<div class="footer-contact-grid">
+<a class="footer-contact-card" href="tel:03363515856">
+<strong>📞 Call Us</strong>
+       03363515856
+      </a>
+<a class="footer-contact-card" href="https://wa.me/923363515856" rel="noopener" target="_blank">
+<strong>🟢 WhatsApp</strong>
+        Message us directly
+      </a>
+<a class="footer-contact-card" href=" alimanzoor5856@gmail.com">
+<strong>✉️ Email</strong>
+         alimanzoor5856@gmail.com
+      </a>
+</div>
+<nav aria-label="Footer navigation" class="footer-links"><a href="index.html">Home</a><a href="subjects.html">Subjects</a><a href="tutors.html">Tutors</a><a href="islamic.html">Islamic Academy</a><a href="register.html">Register</a><a href="contact.html">Contact</a></nav>
+<div class="footer-bottom">
+      © 2026 Smart Ustad. All Rights Reserved.
+    </div>
+</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
